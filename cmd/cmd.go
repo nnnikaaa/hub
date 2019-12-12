@@ -20,7 +20,7 @@ type Cmd struct {
 }
 
 func (cmd Cmd) String() string {
-	return fmt.Sprintf("%s %s", cmd.Name, strings.Join(cmd.Args, " "))
+	return fmt.Sprintf("%s TESTING FORKING %s", cmd.Name, strings.Join(cmd.Args, " "))
 }
 
 func (cmd *Cmd) WithArg(arg string) *Cmd {
